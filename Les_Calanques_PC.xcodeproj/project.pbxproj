@@ -37,6 +37,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F9599F52200C2180090FA40 /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modele;
+			sourceTree = "<group>";
+		};
+		8F9599F62200C22D0090FA40 /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		8F9599F72200C2410090FA40 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FB814E121FFD39A001FC964 /* FirstViewController.swift */,
+				8FB814E321FFD39A001FC964 /* SecondViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		8FB814D321FFD39A001FC964 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +79,10 @@
 		8FB814DE21FFD39A001FC964 /* Les_Calanques_PC */ = {
 			isa = PBXGroup;
 			children = (
+				8F9599F52200C2180090FA40 /* Modele */,
+				8F9599F62200C22D0090FA40 /* Vue */,
+				8F9599F72200C2410090FA40 /* controller */,
 				8FB814DF21FFD39A001FC964 /* AppDelegate.swift */,
-				8FB814E121FFD39A001FC964 /* FirstViewController.swift */,
-				8FB814E321FFD39A001FC964 /* SecondViewController.swift */,
 				8FB814E521FFD39A001FC964 /* Main.storyboard */,
 				8FB814E821FFD39A001FC964 /* Assets.xcassets */,
 				8FB814EA21FFD39A001FC964 /* LaunchScreen.storyboard */,
