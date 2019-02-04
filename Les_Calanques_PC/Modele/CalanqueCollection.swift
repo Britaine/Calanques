@@ -6,10 +6,13 @@
 //  Copyright © 2018 Matthieu PASSEREL. All rights reserved.
 //
 
+
+
 import UIKit
 
 class CalanqueCollection {
     
+    //  initialise le tableau des calanques
     func all() -> [Calanque]{
         var calanques: [Calanque] = []
         
