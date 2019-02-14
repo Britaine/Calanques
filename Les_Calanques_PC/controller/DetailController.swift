@@ -10,6 +10,7 @@ import UIKit
 
 class DetailController: UIViewController {
 
+
     @IBOutlet weak var calanqueIV: imageronde!
     
     @IBOutlet weak var nomEtDesc: UITextView!
@@ -21,7 +22,7 @@ class DetailController: UIViewController {
         guard let calanque = calanqueRecue else {return}
         calanqueIV.image = calanque.image
         
-        let mutable = NSMutableAttributedString(string: calanque.nom + "/n", attributes: [
+        let mutable = NSMutableAttributedString(string: calanque.nom + "\n\n", attributes: [
             .foregroundColor: UIColor.red,
             .font: UIFont.boldSystemFont(ofSize: 20)
             ])
@@ -32,6 +33,7 @@ class DetailController: UIViewController {
                 .foregroundColor: UIColor.darkGray
                 ]))
         nomEtDesc.attributedText = mutable
+        nomEtDesc.textAlignment = .center
         // Do any additional setup after loading the view.
     }
     

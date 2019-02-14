@@ -226,7 +226,17 @@
                             <outlet property="delegate" destination="zHj-Q0-JEG" id="4Jx-Vw-iqz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UNq-BZ-mHp"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="HUI-7F-t06"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="UNq-BZ-mHp">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="1eL-yW-Lbj">
+                            <connections>
+                                <action selector="reloadAction:" destination="zHj-Q0-JEG" id="ici-BU-WMR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="UJF-sL-I4c" kind="show" identifier="detail" id="ZIK-4e-ZN3"/>
                     </connections>
@@ -243,6 +253,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="06b-5V-bGf">
+                                <rect key="frame" x="16" y="294" width="343" height="270"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-u5-eXH" customClass="imageronde" customModule="Les_Calanques_PC" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="74" width="200" height="200"/>
                                 <constraints>
@@ -250,13 +267,6 @@
                                     <constraint firstAttribute="height" constant="200" id="iRn-Ev-LHf"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="06b-5V-bGf">
-                                <rect key="frame" x="16" y="294" width="343" height="314"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -270,6 +280,7 @@
                         <viewLayoutGuide key="safeArea" id="ngr-ku-BcC"/>
                     </view>
                     <connections>
+                        <outlet property="calanqueIV" destination="Ab9-u5-eXH" id="iFx-fF-iCb"/>
                         <outlet property="nomEtDesc" destination="06b-5V-bGf" id="xg2-yz-t39"/>
                     </connections>
                 </viewController>

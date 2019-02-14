@@ -95,7 +95,7 @@ class CalanqueCollection {
         )
         calanques.append(Calanque(
             nom: "Port Miou",
-            desc: "La dernière calanque en partant de Marseille, et la seule située sur la commune de Cassis.\n Accessible facilement en voirure et dsiposant d'un parking, elle est un lieu de départ très prisé pour les randonneurs.\n Elle dispose d'un port.",
+            desc: "La dernière calanque en partant de Marseille, et la seule située sur la commune de Cassis.\n Accessible facilement en voirure et disposant d'un parking, elle est un lieu de départ très prisé pour les randonneurs.\n Elle dispose d'un port.",
             image: UIImage(named: "port miou.jpg"),
             latitude: 43.211208,
             longitude: 5.521256)
